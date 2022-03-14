@@ -1,0 +1,82 @@
+html, body {
+   min-height: 100%;
+}
+
+body {
+   background-color: #99705a;
+   background-image: url('../images/coffee.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: sans-serif;
+}
+
+.heading {
+   text-transform: capitalize;
+   font-weight: bold;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.heading-md {
+   font-size: 2rem;
+}
+
+.heading-lg {
+   font-size: 3.5rem;
+}
+
+.mb {
+   margin-bottom: 2rem;
+}
+
+.wrapper {
+   max-width: 1000px;
+   padding: 4rem 2rem;
+   margin: 0 auto;
+}
+
+.container {
+   text-align: center;
+   background-color: #111111;
+   color: white;
+   padding: 2rem;
+   border-radius: 4px;
+   box-shadow: 0 5px 10px #000000be;
+}
+
+/* # INTRO */
+.intro {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-auto-rows: 300px;
+   gap: 2rem;
+   margin-bottom: 2rem;
+}
+
+.intro__heading {
+   text-align: center;
+   background-color: #111111;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.intro__mug {
+   background-color: #141414d3;
+   background-image: url('../images/coffee-mug.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   grid-column: 2;
+   grid-row: 1;
+}
+
+.intro__desc {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   grid-column: 1 / span 2;
+}
