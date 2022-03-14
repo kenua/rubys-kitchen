@@ -10,6 +10,56 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_tabs_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs-module */ \"./src/modules/tabs-module.js\");\n/* harmony import */ var _modules_intro_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/intro-module */ \"./src/modules/intro-module.js\");\n/* harmony import */ var _modules_menu_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu-module */ \"./src/modules/menu-module.js\");\n/* harmony import */ var _modules_description_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/description-module */ \"./src/modules/description-module.js\");\n/* harmony import */ var _styles_resets_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/resets.css */ \"./src/styles/resets.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _iterableToArray(iter) { if (typeof Symbol !== \"undefined\" && iter[Symbol.iterator] != null || iter[\"@@iterator\"] != null) return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\n//import pageLoaded from './modules/load-content.js';\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function (e) {\n  (0,_modules_tabs_module__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  var printedSection = (0,_modules_intro_module__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  var currentSection = 'intro';\n  var tabsButtonList = document.querySelector('#tabs-button-list');\n  var tabsButtons = document.querySelectorAll('.tabs__button ');\n\n  var switchTab = function switchTab(e) {\n    var target = e.target;\n\n    if (target.dataset.section) {\n      var section = target.dataset.section;\n      if (section === currentSection) return;\n      printedSection.remove();\n\n      _toConsumableArray(tabsButtons).forEach(function (button) {\n        return button.className = 'tabs__button';\n      });\n\n      target.classList.add('tabs__button--active');\n\n      switch (section) {\n        case 'intro':\n          printedSection = (0,_modules_intro_module__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n          currentSection = 'intro';\n          break;\n\n        case 'menu':\n          printedSection = (0,_modules_menu_module__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n          currentSection = 'menu';\n          break;\n\n        case 'desc':\n          printedSection = (0,_modules_description_module__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n          currentSection = 'desc';\n          break;\n      }\n    }\n  };\n\n  tabsButtonList.addEventListener('click', switchTab);\n});\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/description-module.js":
+/*!*******************************************!*\
+  !*** ./src/modules/description-module.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ description)\n/* harmony export */ });\n/* harmony import */ var _markup_description_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/description.html */ \"./src/markup/description.html\");\n\nfunction description() {\n  var div = document.createElement('div');\n  div.className = 'wrapper';\n  div.innerHTML = _markup_description_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.querySelector('#content').append(div);\n  return div;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/description-module.js?");
+
+/***/ }),
+
+/***/ "./src/modules/intro-module.js":
+/*!*************************************!*\
+  !*** ./src/modules/intro-module.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ intro)\n/* harmony export */ });\n/* harmony import */ var _markup_intro_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/intro.html */ \"./src/markup/intro.html\");\n\nfunction intro() {\n  var div = document.createElement('div');\n  div.className = 'wrapper';\n  div.innerHTML = _markup_intro_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.querySelector('#content').append(div);\n  return div;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/intro-module.js?");
+
+/***/ }),
+
+/***/ "./src/modules/menu-module.js":
+/*!************************************!*\
+  !*** ./src/modules/menu-module.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _markup_menu_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/menu.html */ \"./src/markup/menu.html\");\n\nfunction menu() {\n  var div = document.createElement('div');\n  div.className = 'wrapper';\n  div.innerHTML = _markup_menu_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.querySelector('#content').append(div);\n  return div;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/menu-module.js?");
+
+/***/ }),
+
+/***/ "./src/modules/tabs-module.js":
+/*!************************************!*\
+  !*** ./src/modules/tabs-module.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ tabs)\n/* harmony export */ });\n/* harmony import */ var _markup_tabs_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/tabs.html */ \"./src/markup/tabs.html\");\n\nfunction tabs() {\n  var div = document.createElement('div');\n  div.className = 'wrapper';\n  div.innerHTML = _markup_tabs_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.querySelector('#content').append(div);\n  return div;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/tabs-module.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/resets.css":
 /*!*********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/resets.css ***!
@@ -177,56 +227,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 /***/ ((module) => {
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://restaurant-page/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_tabs_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs-module */ \"./src/modules/tabs-module.js\");\n/* harmony import */ var _modules_intro_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/intro-module */ \"./src/modules/intro-module.js\");\n/* harmony import */ var _modules_menu_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu-module */ \"./src/modules/menu-module.js\");\n/* harmony import */ var _modules_description_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/description-module */ \"./src/modules/description-module.js\");\n/* harmony import */ var _styles_resets_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/resets.css */ \"./src/styles/resets.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n//import pageLoaded from './modules/load-content.js';\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', e => {\r\n   (0,_modules_tabs_module__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n   let printedSection = (0,_modules_intro_module__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n   let currentSection = 'intro';\r\n   let tabsButtonList = document.querySelector('#tabs-button-list');\r\n   let tabsButtons = document.querySelectorAll('.tabs__button ');\r\n   let switchTab = (e) => {\r\n      let target = e.target;\r\n   \r\n      if (target.dataset.section) {\r\n         let section = target.dataset.section;\r\n\r\n         if (section === currentSection) return;\r\n\r\n         printedSection.remove();\r\n         [...tabsButtons].forEach(button => button.className = 'tabs__button');\r\n         target.classList.add('tabs__button--active');\r\n\r\n         switch (section) {\r\n            case 'intro':\r\n               printedSection = (0,_modules_intro_module__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n               currentSection = 'intro';\r\n               break;\r\n            case 'menu':\r\n               printedSection = (0,_modules_menu_module__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n               currentSection = 'menu';\r\n               break;\r\n            case 'desc':\r\n               printedSection = (0,_modules_description_module__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n               currentSection = 'desc';\r\n               break;\r\n         }\r\n      }\r\n   }\r\n\r\n   tabsButtonList.addEventListener('click', switchTab);\r\n});\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/modules/description-module.js":
-/*!*******************************************!*\
-  !*** ./src/modules/description-module.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ description)\n/* harmony export */ });\n/* harmony import */ var _markup_description_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/description.html */ \"./src/markup/description.html\");\n\r\n\r\nfunction description() {\r\n   let div = document.createElement('div');\r\n\r\n   div.className = 'wrapper';\r\n   div.innerHTML = _markup_description_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n   document.querySelector('#content').append(div);\r\n   return div;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/description-module.js?");
-
-/***/ }),
-
-/***/ "./src/modules/intro-module.js":
-/*!*************************************!*\
-  !*** ./src/modules/intro-module.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ intro)\n/* harmony export */ });\n/* harmony import */ var _markup_intro_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/intro.html */ \"./src/markup/intro.html\");\n\r\n\r\nfunction intro() {\r\n   let div = document.createElement('div');\r\n\r\n   div.className = 'wrapper';\r\n   div.innerHTML = _markup_intro_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n   document.querySelector('#content').append(div);\r\n   return div;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/intro-module.js?");
-
-/***/ }),
-
-/***/ "./src/modules/menu-module.js":
-/*!************************************!*\
-  !*** ./src/modules/menu-module.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _markup_menu_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/menu.html */ \"./src/markup/menu.html\");\n\r\n\r\nfunction menu() {\r\n   let div = document.createElement('div');\r\n\r\n   div.className = 'wrapper';\r\n   div.innerHTML = _markup_menu_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n   document.querySelector('#content').append(div);\r\n   return div;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/menu-module.js?");
-
-/***/ }),
-
-/***/ "./src/modules/tabs-module.js":
-/*!************************************!*\
-  !*** ./src/modules/tabs-module.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ tabs)\n/* harmony export */ });\n/* harmony import */ var _markup_tabs_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../markup/tabs.html */ \"./src/markup/tabs.html\");\n\r\n\r\nfunction tabs() {\r\n   let div = document.createElement('div');\r\n\r\n   div.className = 'wrapper';\r\n   div.innerHTML = _markup_tabs_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n   document.querySelector('#content').append(div);\r\n   return div;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/modules/tabs-module.js?");
 
 /***/ }),
 
