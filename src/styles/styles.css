@@ -44,6 +44,42 @@ body {
    box-shadow: 0 5px 10px #000000be;
 }
 
+/* # TABS */
+.tabs {
+   background-color: #111111;
+   color: white;
+   border-radius: 4px;
+}
+
+.tabs__ul {
+   display: flex;
+}
+
+.tabs__li {
+   flex: auto;
+}
+
+.tabs__button {
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: bold;
+   background-color: #00000000;
+   color: white;
+   width: 100%;
+   padding: 2rem 0;
+   border: none;
+   display: block;
+   cursor: pointer;
+}
+
+.tabs__button:hover, .tabs__button:focus  {
+   background-color: #3636364d;
+}
+
+.tabs__button--active {
+   background-color: #3636364d;
+}
+
 /* # INTRO */
 .intro {
    display: grid;
