@@ -8,6 +8,7 @@ module.exports = {
       filename: "main.js",
       path: path.resolve(__dirname, "build"),
       clean: true,
+      assetModuleFilename: "[name][ext]",
    },
    devtool: "inline-source-map",
    devServer: {
@@ -27,8 +28,22 @@ module.exports = {
             loader: "html-loader",
          },
          {
-            test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
+            test: /\.s[ac]ss$/i,
+            use: [
+               "style-loader",
+               "css-loader",
+               "resolve-url-loader",
+               {
+                  loader: "sass-loader",
+                  options: {
+                     sourceMap: true,
+                  },
+               },
+            ],
+         },
+         {
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: "asset/resource",
          },
          {
             test: /\.m?js$/,

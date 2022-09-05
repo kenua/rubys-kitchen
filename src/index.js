@@ -1,3 +1,11 @@
+import breakfast from "./images/breakfast.jpg";
+import lunch from "./images/lunch.jpg";
+import drinks from "./images/drinks.jpg";
+import "./sass/styles.scss";
+
+console.log("hello");
+
+/* OLD CODE
 //import pageLoaded from './modules/load-content.js';
 import tabs from './modules/tabs-module';
 import intro from './modules/intro-module';
@@ -44,3 +52,4 @@ document.addEventListener('DOMContentLoaded', e => {
 
    tabsButtonList.addEventListener('click', switchTab);
 });
+*/

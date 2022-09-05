@@ -4,13 +4,130 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="author" content="Kenua">
+   <meta name="author" content="https://github.com/kenua">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+   <link 
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Libre+Franklin:wght@400;700&display=swap" 
+      rel="stylesheet"
+   >
    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-   <div id="content"></div>
+   <!-- NAVBAR -->
+   <nav class="navbar">
+      <ul class="cormorant">
+         <li><a href="#" class="navbar__anchor ">Home</a></li>
+         <li><a href="#" class="navbar__anchor">Menu</a></li>
+         <li><a href="#" class="navbar__anchor">About</a></li>
+      </ul>
+   </nav>
+   <!-- HOME -->
+   <section class="home">
+      <div class="intro text-center">
+         <h1 class="heading">Restaurant</h1>
+         <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum erat. Mauris eleifend
+            dolor sed lorem commodo ultrices. Vestibulum dignissim placerat orci, id vestibulum sapien posuere 
+            vel. Lorem ipsum dolor sit
+         </p>
+      </div>
+   </section>
+   <!-- MENU -->
+   <article class="menu container">
+      <h2 class="heading text-center">Our Menu</h2>
+      <p class="text text-center">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum erat. Mauris eleifend
+         dolor sed lorem commodo ultrices. Vestibulum dignissim placerat orci, id vestibulum sapien posuere 
+         vel. Lorem ipsum dolor sit 
+      </p>
+
+      <section class="menu-item">
+         <div class="flex-item">
+            <h3 class="heading">Breakfast</h3>
+            <p class="text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum erat. Mauris eleifend 
+               dolor sed lorem commodo ultrices. Vestibulum dignissim placerat orci, id vestibulum sapien posuere 
+               vel. Lorem ipsum dolor sit
+            </p>
+            <a href="#" class="button">See more</a>
+         </div>
+         <div class="flex-item">
+            <div class="img-container">
+               <img src="./breakfast.jpg" alt="Food" class="menu-item__img">
+            </div>
+         </div>
+      </section>
+
+      <section class="menu-item menu-item--reverse">
+         <div class="flex-item">
+            <h3 class="heading">Lunch</h3>
+            <p class="text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum erat. Mauris eleifend 
+               dolor sed lorem commodo ultrices. Vestibulum dignissim placerat orci, id vestibulum sapien posuere 
+               vel. Lorem ipsum dolor sit
+            </p>
+            <a href="#" class="button">See more</a>
+         </div>
+         <div class="flex-item">
+            <div class="img-container">
+               <img src="./lunch.jpg" alt="Food" class="menu-item__img">
+            </div>
+         </div>
+      </section>
+
+      <section class="menu-item">
+         <div class="flex-item">
+            <h3 class="heading">Drinks</h3>
+            <p class="text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum erat. Mauris eleifend 
+               dolor sed lorem.
+            </p>
+            <a href="#" class="button">See more</a>
+         </div>
+         <div class="flex-item">
+            <div class="img-container">
+               <img src="./drinks.jpg" alt="Orange juice" class="menu-item__img">
+            </div>
+         </div>
+      </section>
+   </article>
+   <!-- ABOUT US -->
+   <section class="about-us container">
+      <h2 class="heading text-center">About Us</h2>
+      <p class="text text-center">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum erat. Mauris eleifend dolor sed 
+         lorem commodo ultrices. Vestibulum dignissim placerat orci, id vestibulum sapien posuere vel. Lorem ipsum dolor 
+         sit
+      </p>
+      <h2 class="heading text-center">Images Provided by PEXELS</h2>
+      <ul>
+         <li class="text">
+            Intro background image by: 
+            <a href="https://www.pexels.com/photo/white-and-brown-cooked-dish-on-white-ceramic-bowls-958545/" class="anchor" target="_blank">
+               <strong>Chan Walrus</strong>
+            </a>
+         </li>
+         <li class="text">
+            Breakfast image by: 
+            <a href="https://www.pexels.com/photo/breakfast-meal-on-a-table-2325302/" class="anchor" target="_blank">
+               <strong>Viktoria Alipatova</strong>
+            </a>
+         </li>
+         <li class="text">
+            Lunch image by: 
+            <a href="https://www.pexels.com/photo/food-plate-restaurant-brunch-5894767/" class="anchor" target="_blank">
+               <strong>Jackie Jabson</strong>
+            </a>
+         </li>
+         <li class="text">
+            Juice image by: 
+            <a href="https://www.pexels.com/photo/orange-juice-in-clear-plastic-glass-6416553/" class="anchor" target="_blank">
+               <strong>rajdeepcraft</strong>
+            </a>
+         </li>
+      </ul>
+   </section>
+   <!--<div id="content"></div>-->
 </body>
 </html>

@@ -1,0 +1,30 @@
+.home {
+   background-color: gray;
+   background-image: url('../../images/food-small.jpg');
+   background-position: 0 0;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100vh;
+   min-height: 600px;
+   .intro {
+      background-color: $primary;
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+   }
+}
+
+@media only screen and (min-width: 1024px) {
+   .home {
+      background-image: url('../../images/food.jpg');
+      .intro {
+         padding: 0 8rem;
+      }
+   }
+}

@@ -1,0 +1,37 @@
+.cormorant {
+   font-family: $ff-cormorant;
+}
+.libre {
+   font-family: $ff-libre;
+}
+.heading {
+   font-family: $ff-cormorant;
+   font-weight: bold;
+   font-style: italic;
+   font-size: 3.5rem;
+   line-height: 1;
+   margin-bottom: 2rem;
+   @media only screen and (min-width: 1024px) {
+      font-size: 6rem;
+   }
+}
+.text {
+   font-family: $ff-libre;
+   font-size: 1.6rem;
+   line-height: 2;
+   @media only screen and (min-width: 1024px) {
+      font-size: 2rem;
+   }
+}
+.text-center {
+   text-align: center;
+}
+.anchor {
+   font-style: italic;
+   color: $light;
+   text-decoration: none;
+   border-bottom: 3px dashed $light;
+   &:hover {
+      border-color: $secondary;
+   }
+}
