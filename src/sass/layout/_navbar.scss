@@ -33,6 +33,10 @@
          color: white;
       }
    }
+   &__anchor--active {
+      background-color: $thirdly;
+      color: white;
+   }
 }
 @media only screen and (min-width: 1024px) {
    .navbar {
