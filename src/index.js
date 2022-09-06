@@ -1,55 +1,42 @@
-import breakfast from "./images/breakfast.jpg";
-import lunch from "./images/lunch.jpg";
-import drinks from "./images/drinks.jpg";
+import insertHome from "./modules/home-module";
+import insertMenu from "./modules/menu-module";
+import insertAbout from "./modules/about-module";
 import "./sass/styles.scss";
 
-console.log("hello");
+document.addEventListener("DOMContentLoaded", () => {
+   const navbarUl = document.getElementById("navbar-ul");
 
-/* OLD CODE
-//import pageLoaded from './modules/load-content.js';
-import tabs from './modules/tabs-module';
-import intro from './modules/intro-module';
-import menu from './modules/menu-module';
-import description from './modules/description-module';
-import './styles/resets.css';
-import './styles/styles.css';
+   let currentSectionNode;
+   let currentSectionName;
 
-document.addEventListener('DOMContentLoaded', e => {
-   tabs();
+   currentSectionNode = insertHome();
+   currentSectionName = "home";
 
-   let printedSection = intro();
-   let currentSection = 'intro';
-   let tabsButtonList = document.querySelector('#tabs-button-list');
-   let tabsButtons = document.querySelectorAll('.tabs__button ');
-   let switchTab = (e) => {
+   navbarUl.addEventListener("click", changeSection);
+
+   function changeSection(e) {
+      e.preventDefault();
+
       let target = e.target;
-   
-      if (target.dataset.section) {
-         let section = target.dataset.section;
+      let href = target.getAttribute("href");
 
-         if (section === currentSection) return;
+      if (!href || href === currentSectionName) return;
 
-         printedSection.remove();
-         [...tabsButtons].forEach(button => button.className = 'tabs__button');
-         target.classList.add('tabs__button--active');
+      currentSectionNode.remove();
 
-         switch (section) {
-            case 'intro':
-               printedSection = intro();
-               currentSection = 'intro';
-               break;
-            case 'menu':
-               printedSection = menu();
-               currentSection = 'menu';
-               break;
-            case 'desc':
-               printedSection = description();
-               currentSection = 'desc';
-               break;
-         }
+      switch (href) {
+         case "home":
+            currentSectionNode = insertHome();
+            currentSectionName = "home";
+            break;
+         case "menu":
+            currentSectionNode = insertMenu();
+            currentSectionName = "menu";
+            break;
+         case "about":
+            currentSectionNode = insertAbout();
+            currentSectionName = "about";
+            break;
       }
    }
-
-   tabsButtonList.addEventListener('click', switchTab);
 });
-*/

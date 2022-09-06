@@ -1,11 +1,11 @@
-import menu from "../html/menu.html";
+import home from "../html/home.html";
 
-function insertMenu() {
+function insertHome() {
    const div = document.createElement("div");
 
-   div.innerHTML = menu;
+   div.innerHTML = home;
    document.getElementById("content").appendChild(div);
    return div;
 }
 
-export default insertMenu;
+export default insertHome;
