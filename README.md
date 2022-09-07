@@ -3,4 +3,4 @@
 
 A static page build with HTML5, Sass, Javascript, and bundled with Webpack.
 
-<s href="#" target="_blank">Live Preview</a>
+<a href="https://kenua.github.io/restaurant-page/" target="_blank">Live Preview</a>
