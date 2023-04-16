@@ -1,11 +1,8 @@
-// MODULES
-@import './modules/variables';
-@import './modules/typography';
-@import './modules/buttons';
-// LAYOUT
-@import './layout/default';
-@import './layout/home';
-@import './layout/navbar';
-@import './layout/menu';
-@import './layout/about-us';
-
+@use './custom';
+@use './fonts';
+@use './base';
+@use './navigation-bar';
+@use './home';
+@use './menu';
+@use './about';
+@use './modules';

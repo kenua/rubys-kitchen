@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="https://github.com/kenua">
+   <title>Restaurant Page</title>
+</head>
+<body>
+   <nav class="navigation-bar container-fluid bg-thirdly text-primary py-2">
+      <ul class="navigation-bar__ul list-unstyled d-flex justify-content-between fw-bold fs-6 position-relative">
+         <li><a href="home" class="navigation-bar__anchor navigation-bar__anchor--active text-decoration-none tran-color">Home</a></li>
+         <li><a href="menu" class="navigation-bar__anchor text-decoration-none tran-color">Menu</a></li>
+         <li><a href="about" class="navigation-bar__anchor text-decoration-none tran-color">About</a></li>
+      </ul>
+   </nav>
+   <!-- HOME -->
+   <section class="home container-fluid text-center pt-5">
+      <img src="../assets/images/Circle.svg" class="home__circle">
+      <img src="../assets/images/dish-1.png" class="home__dish">
+      <div>
+         <h1 class="display-3 text-primary">Fresh Maxican Food<br>In Your Town</h1>
+         <p class="fs-5 text-primary my-4">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Sin te auctoritas commovebat</p>
+         <div class="d-flex flex-column flex-sm-row justify-content-center">
+            <div class="mb-3 mb-sm-0 me-sm-3">
+               <a href="menu" class="btn btn-secondary text-white px-4 py-3 fs-5 fw-bold mb-">Order now</a>
+            </div>
+            <div>
+               <a href="about" class="btn btn-outline-secondary text-danger px-4 py-3 fs-5 fw-bold tran-color"><i class="bi bi-info-circle me-1"></i> Our Story</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- MENU -->
+   <section class="container-lg pt-5 px-4 mb-7">
+      <div class="discover-grid">
+         <h1 class="discover-grid__heading display-3 text-primary">Discover<br>Our Menu</h1>
+         <div class="discover-grid__rectangle"></div>
+         <div class="discover-subgrid">
+            <img src="../assets/images/dish-2.jpg" alt="" class="discover-subgrid__item">
+            <img src="../assets/images/dish-3.jpg" alt="" class="discover-subgrid__item">
+            <img src="../assets/images/dish-4.jpg" alt="" class="discover-subgrid__item">
+            <img src="../assets/images/dish-5.jpg" alt="" class="discover-subgrid__item">
+            <img src="../assets/images/dish-6.jpg" alt="" class="discover-subgrid__item"> 
+         </div>
+         <p class="discover-grid__text fs-5 mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea unde asperiores laboriosam, 
+            iure aut nostrum est placeat, nobis nemo voluptate vero suscipit molestias esse facilis 
+            dicta totam quibusdam, impedit voluptates?
+         </p>
+      </div><!--.discover-grid-->
+
+      <div class="food-grid row gx-7 gy-9">
+         <div class="col-md-6 col-xl-4">
+            <div class="food-grid__item bg-primary text-white p-4 rounded-4">
+               <img src="../assets/images/dish-11.png" alt="" class="food-grid__image">
+               <h2 class="text-end mt-6 mb-4">$10.99</h2>
+               <h3 class="Playfair fs-5">Steak with pepper</h3>
+               <h4 class="Playfair fs-6 d-flex justify-content-between">With special sauce <i class="bi bi-cart3 fs-5"></i></h4>
+               <p class="mt-4 mb-0"><i class="bi bi-star"></i> 5.0</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <div class="food-grid__item bg-primary text-white p-4 rounded-4">
+               <img src="../assets/images/dish-9.png" alt="" class="food-grid__image">
+               <h2 class="text-end mt-6 mb-4">$8.99</h2>
+               <h3 class="Playfair fs-5">Rice</h3>
+               <h4 class="Playfair fs-6 d-flex justify-content-between">With special sauce <i class="bi bi-cart3 fs-5"></i></h4>
+               <p class="mt-4 mb-0"><i class="bi bi-star"></i> 5.0</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <div class="food-grid__item bg-primary text-white p-4 rounded-4">
+               <img src="../assets/images/dish-7.png" alt="" class="food-grid__image">
+               <h2 class="text-end mt-6 mb-4">$15.99</h2>
+               <h3 class="Playfair fs-5">Chicken BBQ</h3>
+               <h4 class="Playfair fs-6 d-flex justify-content-between">With special sauce <i class="bi bi-cart3 fs-5"></i></h4>
+               <p class="mt-4 mb-0"><i class="bi bi-star"></i> 5.0</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <div class="food-grid__item bg-primary text-white p-4 rounded-4">
+               <img src="../assets/images/dish-10.png" alt="" class="food-grid__image">
+               <h2 class="text-end mt-6 mb-4">$12.99</h2>
+               <h3 class="Playfair fs-5">Salad</h3>
+               <h4 class="Playfair fs-6 d-flex justify-content-between">With special sauce <i class="bi bi-cart3 fs-5"></i></h4>
+               <p class="mt-4 mb-0"><i class="bi bi-star"></i> 5.0</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <div class="food-grid__item bg-primary text-white p-4 rounded-4">
+               <img src="../assets/images/dish-12.png" alt="" class="food-grid__image">
+               <h2 class="text-end mt-6 mb-4">$10.99</h2>
+               <h3 class="Playfair fs-5">Onion salad</h3>
+               <h4 class="Playfair fs-6 d-flex justify-content-between">With special sauce <i class="bi bi-cart3 fs-5"></i></h4>
+               <p class="mt-4 mb-0"><i class="bi bi-star"></i> 5.0</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <div class="food-grid__item bg-primary text-white p-4 rounded-4">
+               <img src="../assets/images/dish-8.png" alt="" class="food-grid__image">
+               <h2 class="text-end mt-6 mb-4">$10.99</h2>
+               <h3 class="Playfair fs-5">Tomato pizza</h3>
+               <h4 class="Playfair fs-6 d-flex justify-content-between">With special sauce <i class="bi bi-cart3 fs-5"></i></h4>
+               <p class="mt-4 mb-0"><i class="bi bi-star"></i> 5.0</p>
+            </div>
+         </div>
+      </div><!--.food-grid-->
+   </section>
+   <!-- ABOUT -->
+   <section class="container-lg py-8 px-4">
+      <div class="row mb-8 gx-8">
+         <div class="col-md-6">
+            <h1 class="display-3 text-primary mb-3">Our Story</h1>
+            <p class="text-primary fw-bold mb-5 mb-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio harum corrupti qui, eaque amet.</p>
+         </div>
+         <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut ex saepe itaque eum exercitationem perferendis ratione natus sapiente reiciendis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid architecto mollitia, beatae, cumque saepe impedit neque aliquam iure possimus, nihil tenetur similique! Labore amet tempore, omnis consectetur laudantium expedita nihil!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae esse ducimus perferendis, voluptatibus eius animi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, obcaecati sit, quam laborum maiores quisquam, nisi accusamus a expedita eum dolores distinctio quod quo sed debitis molestiae! Corporis exercitationem, ipsa iste architecto cumque necessitatibus velit, culpa inventore voluptatum, tempore error?</p>
+         </div>
+      </div>
+
+      <div class="bg-primary py-10 px-5 text-white">
+         <div class="row about-timeline">
+            <div class="about-timeline__item col-lg-3 mb-5 mb-lg-0 pt-5">
+               <h2 class="mb-5 fw-bold">1998</h2>
+               <h3 class="Playfair fs-5">Milestone One</h3>
+               <p class="text-thirdly m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+            <div class="about-timeline__item col-lg-3 mb-5 mb-lg-0 pt-5">
+               <h2 class="mb-5 fw-bold">1998</h2>
+               <h3 class="Playfair fs-5">Milestone Two</h3>
+               <p class="text-thirdly m-0">Lorem  dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+            </div>
+            <div class="about-timeline__item col-lg-3 mb-5 mb-lg-0 pt-5">
+               <h2 class="mb-5 fw-bold">1998</h2>
+               <h3 class="Playfair fs-5">Milestone Three</h3>
+               <p class="text-thirdly m-0">Ipsum dolor sit amet consectetur adipisicing voluptates.</p>
+            </div>
+            <div class="about-timeline__item col-lg-3 mb-lg-0 pt-5">
+               <h2 class="mb-5 fw-bold">1998</h2>
+               <h3 class="Playfair fs-5">Milestone Four</h3>
+               <p class="text-thirdly m-0">Dolor sit amet consectetur adipisicing elit Fugit voluptates.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+</html>

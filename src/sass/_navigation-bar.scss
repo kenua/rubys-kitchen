@@ -1,0 +1,17 @@
+@use './custom.scss' as *;
+
+.navigation-bar {
+   &__ul {
+      width: 100%;
+      max-width: 225px;
+      margin: 0 auto;
+   }
+   &__anchor {
+      &:hover {
+         color: $orange;  
+      }
+   }
+   &__anchor--active {
+      color: $orange;  
+   }
+}

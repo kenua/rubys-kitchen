@@ -1,0 +1,26 @@
+@use './custom' as *;
+
+.about-timeline {
+   &__item {
+      border-top: 2px dashed #0000007e;
+      position: relative;
+
+      &::before {
+         content: '';
+         background-color: $thirdly;
+         width: 50px;
+         height: 5px;
+         position: absolute;
+         top: -5px;
+         left: 12px;
+      }
+   }
+
+   @include media-breakpoint-up(lg) {
+      border-top: 2px dashed #0000007e;
+
+      &__item {
+         border-top: none;
+      }
+   }
+}
