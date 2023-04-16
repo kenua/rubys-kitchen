@@ -1,51 +1,42 @@
-import insertHome from "./modules/home-module";
-import insertMenu from "./modules/menu-module";
-import insertAbout from "./modules/about-module";
-import "./sass/styles.scss";
+import './sass/styles.scss';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+import appendHome from './modules/appendHome.js';
+import appendMenu from './modules/appendMenu.js';
+import appendAbout from './modules/appendAbout.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-   const navbarUl = document.getElementById("navbar-ul");
-   const navbarAnchors = [...document.getElementsByClassName("navbar__anchor")];
+document.addEventListener('DOMContentLoaded', () => {
+   const navbarAnchors = [...document.getElementsByClassName('navigation-bar__anchor')];
+   let currentPage = 'home';
+   let currentPageNode;
 
-   let currentSectionNode;
-   let currentSectionName;
+   currentPageNode = appendHome();
+   navbarAnchors.forEach(a => a.addEventListener('click', changePage));
 
-   currentSectionNode = insertHome();
-   currentSectionName = "home";
-   navbarAnchors[0].className = "navbar__anchor navbar__anchor--active";
-
-   navbarUl.addEventListener("click", changeSection);
-
-   function changeSection(e) {
+   function changePage(e) {
       e.preventDefault();
 
-      let target = e.target;
-      let href = target.getAttribute("href");
+      let location = e.target.getAttribute('href');
 
-      if (!href || href === currentSectionName) return;
+      if (currentPage === location) return;
 
-      currentSectionNode.remove();
+      currentPageNode.remove();
 
-      switch (href) {
-         case "home":
-            currentSectionNode = insertHome();
-            currentSectionName = "home";
+      switch (location) {
+         case 'home':
+            currentPageNode = appendHome();
+            currentPage = 'home';
             break;
-         case "menu":
-            currentSectionNode = insertMenu();
-            currentSectionName = "menu";
+         case 'menu':
+            currentPageNode = appendMenu();
+            currentPage = 'menu';
             break;
-         case "about":
-            currentSectionNode = insertAbout();
-            currentSectionName = "about";
+         case 'about':
+            currentPageNode = appendAbout();
+            currentPage = 'about';
             break;
       }
 
-      navbarAnchors.forEach((anchor) => (anchor.className = "navbar__anchor"));
-      navbarAnchors.forEach((anchor) => {
-         if (anchor.getAttribute("href") === currentSectionName) {
-            anchor.className = "navbar__anchor navbar__anchor--active";
-         }
-      });
+      navbarAnchors.forEach(anchor => anchor.classList.remove('navigation-bar__anchor--active'));
+      e.target.classList.add('navigation-bar__anchor--active');
    }
 });
