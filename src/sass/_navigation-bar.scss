@@ -1,6 +1,9 @@
 @use './custom.scss' as *;
 
 .navigation-bar {
+   position: relative;
+   z-index: 10;
+
    &__ul {
       width: 100%;
       max-width: 225px;
