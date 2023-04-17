@@ -2,7 +2,7 @@
    position: relative;
 
    &__circle {
-      width: 1400px;
+      width: 1000px;
       position: absolute;
       top: -100px;
       left: 50%;
@@ -10,9 +10,9 @@
       transform: translateX(-50%);
    }
    &__dish {
-      width: 250px;
+      width: 200px;
       position: absolute;
-      bottom: -350px;
+      bottom: -240px;
       left: 50%;
       z-index: 1;
       transform: translateX(-50%);
