@@ -1,6 +1,6 @@
-# Restaurant Page
-<img src="./restaurant-screenshot.png" alt="Restaurant Page Screenshot" width="800">
+# Ruby's Kitchen 👩‍🍳
+Built a static page bundled with Webpack and styled with Bootstrap.
 
-A static page build with HTML5, Sass, Javascript, and bundled with Webpack.
+🌐 [Live Preview](https://kenua.github.io/rubys-kitchen/)
 
-<a href="https://kenua.github.io/restaurant-page/" target="_blank">Live Preview</a>
+[![Page screenshot](./screenshot.png)](https://kenua.github.io/rubys-kitchen/)
