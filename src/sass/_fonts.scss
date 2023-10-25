@@ -3,21 +3,24 @@
    font-weight: normal;
    font-style: normal;
    src: local('DMSans-Regular'),
-        url('../assets/fonts/DMSans-Regular.ttf') format('truetype'),
+        url('../assets/fonts/DMSans-Regular.ttf') format('truetype');
+   font-display: swap;
 }
 @font-face {
    font-family: 'DMSans';
    font-weight: bold;
    font-style: normal;
    src: local('DMSans-Bold'),
-        url('../assets/fonts/DMSans-Bold.ttf') format('truetype'),
+        url('../assets/fonts/DMSans-Bold.ttf') format('truetype');
+   font-display: swap;
 }
 @font-face {
    font-family: 'DMSans';
    font-weight: normal;
    font-style: italic;
    src: local('DMSans-Italic'),
-        url('../assets/fonts/DMSans-Italic.ttf') format('truetype'),
+        url('../assets/fonts/DMSans-Italic.ttf') format('truetype');
+   font-display: swap;
 }
 
 @font-face {
@@ -25,21 +28,25 @@
    font-weight: normal;
    font-style: normal;
    src: local('PlayfairDisplay-Regular'),
-        url('../assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('../assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+   font-display: swap;
+        
 }
 @font-face {
    font-family: 'PlayfairDisplay';
    font-weight: bold;
    font-style: normal;
    src: local('PlayfairDisplay-Bold'),
-        url('../assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+   font-display: swap;
 }
 @font-face {
    font-family: 'PlayfairDisplay';
    font-weight: normal;
    font-style: italic;
    src: local('PlayfairDisplay-Italic'),
-        url('../assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('../assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+   font-display: swap;
 }
 .DMsans {
    font-family: 'DMSans', sans-serif;
