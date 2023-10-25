@@ -1,20 +1,24 @@
 import './sass/styles.scss';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+import appendNavbar from './modules/appendNavbar';
 import appendHome from './modules/appendHome.js';
 import appendMenu from './modules/appendMenu.js';
 import appendAbout from './modules/appendAbout.js';
 import { fadeOut, fadeIn } from './modules/fadeFunctions.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+   appendNavbar();
+
+   const rootNode = document.getElementById('root');
    const contentNode = document.getElementById('content');
    const navbarAnchors = [...document.getElementsByClassName('navigation-bar__anchor')];
    let currentPage = 'home';
    let currentPageNode;
    let runFadeAnimation = true;
 
-   contentNode.style.opacity = 0;
+   rootNode.style.opacity = 0;
    currentPageNode = appendHome();
-   fadeIn(contentNode);
+   fadeIn(rootNode);
    navbarAnchors.forEach(a => a.addEventListener('click', changePage));
 
    function changePage(e) {
